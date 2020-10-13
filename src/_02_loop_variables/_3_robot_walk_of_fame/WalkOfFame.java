@@ -5,13 +5,33 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class WalkOfFame {
 	public static void main(String[] args) {
-		Robot rob = new Robot();
+		Robot a = new Robot();
 		
 		// 1. Set the X position of the robot so that it starts on the left. 
 		// You also need to show the robot to see the result of this line.
 
+		a.moveTo(150, 250);
+		a.setSpeed(300);
+		
+		a.move(30);
+		a.turn(144);
+	
+	a.penUp();
+	a.setAngle(90);
+	a.move(50);
+		
 		// 2. Make the robot draw a star shape. Hint: angle=144.
-
+		for (int c = 0; c < 10; c++) {
+			
+		a.penDown();
+for (int i = 0; i < 5; i++) {
+	a.move(30);
+	a.turn(144);
+}
+a.penUp();
+a.setAngle(90);
+a.move(50);
+	}
 		// 3. Set the length of each line in the star to 30.
 
 		/** THE CHALLENGE: **/
